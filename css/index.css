@@ -141,6 +141,11 @@ div.container {
   margin: 0 auto;
   font-weight: 600;
 }
+@media (max-width: 500px) {
+  div.container {
+    margin: 0 2%;
+  }
+}
 h1 {
   font-size: 50px;
 }
@@ -157,6 +162,11 @@ header nav {
   justify-content: space-between;
   width: 50%;
   margin: 2% 0;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+  }
 }
 header nav a {
   text-decoration: none;
@@ -198,6 +208,11 @@ div.content section.right-content ul {
   list-style: circle inside;
   line-height: 1.4;
 }
+@media (max-width: 500px) {
+  div.content section.right-content {
+    margin: 0 2% 0 0;
+  }
+}
 div.work-history {
   width: 100%;
   margin-bottom: 60px;
@@ -210,6 +225,12 @@ div.work-history table {
   margin: 0 2%;
   width: 98%;
 }
+@media (max-width: 500px) {
+  div.work-history table {
+    width: 100%;
+    margin: 0;
+  }
+}
 div.work-history table,
 div.work-history th,
 div.work-history td {
@@ -217,6 +238,13 @@ div.work-history td {
   border-bottom: 1px solid black;
   padding: 15px 45px 15px 10px;
   text-align: left;
+}
+@media (max-width: 500px) {
+  div.work-history table,
+  div.work-history th,
+  div.work-history td {
+    padding: 15px 15px 15px 10px;
+  }
 }
 div.work-history thead {
   background-color: #f0f0f0;

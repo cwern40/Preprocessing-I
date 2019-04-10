@@ -65,7 +65,7 @@ html, body {
 	flex-wrap: wrap;
 }
 .width (){
-	.width
+	width: 100%;
 }
 
 div.container {
@@ -73,6 +73,10 @@ div.container {
 	max-width: 800px;
 	margin: 0 auto;
 	font-weight: 600;
+
+	@media (max-width: 500px) {
+		margin: 0 2%;
+	}
 }
 
 h1 {
@@ -85,7 +89,7 @@ h2 {
 }
 
 header {
-	.width
+	.width;
 	line-height: 1.2;
 
 	nav {
@@ -93,6 +97,10 @@ header {
 		justify-content: space-between;
 		width: 50%;
 		margin: 2% 0;
+
+		@media (max-width: 500px){
+			.width;
+		}
 
 		a {
 			text-decoration: none;
@@ -113,7 +121,7 @@ header {
 		padding: 2%;
 
 		h1{
-			.width
+			.width;
 			text-align: center;
 		}
 	}
@@ -122,7 +130,7 @@ header {
 div.content {
 	display: flex;
 	justify-content: space-between;
-	.width
+	.width;
 	margin: 50px 0;
 
 	section.left-content {
@@ -141,11 +149,15 @@ div.content {
 			list-style: circle inside;
 			line-height: 1.4;
 		}
+
+		@media (max-width: 500px) {
+			margin: 0 2% 0 0;
+		}
 	}
 }
 
 div.work-history {
-	.width
+	.width;
 	margin-bottom: 60px;
 
 	h2 {
@@ -156,6 +168,11 @@ div.work-history {
 		border-collapse: collapse;
 		margin: 0 2%;
 		width: 98%;
+
+		@media (max-width: 500px) {
+			width: 100%;
+			margin: 0;
+		}
 	}
 
 	table, th, td {
@@ -163,6 +180,10 @@ div.work-history {
 		border-bottom: 1px solid black;
 		padding: 15px 45px 15px 10px;
 		text-align: left;
+
+		@media (max-width: 500px) {
+			padding: 15px 15px 15px 10px;
+		}
 	}
 
 	thead{
