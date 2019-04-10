@@ -60,9 +60,13 @@ html, body {
 @background: rgb(240, 240, 240);
 @alt-color: darkgray;
 
-div.container {
+.flex (){
 	display: flex;
 	flex-wrap: wrap;
+}
+
+div.container {
+	.flex;
 	max-width: 800px;
 	margin: 0 auto;
 	font-weight: 600;
@@ -99,9 +103,8 @@ header {
 	}
 
 	section.title {
-		display: flex;
+		.flex;
 		justify-content: center;
-		flex-wrap: wrap;
 		background: @background;
 		border-radius: 5px;
 		padding: 2%;
